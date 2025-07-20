@@ -2,9 +2,7 @@
 
 import { InputHTMLAttributes } from 'react';
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
-
-const Input = ({ ...props }: InputProps) => {
+const Input = ({ ...props }: InputHTMLAttributes<HTMLInputElement>) => {
   return (
     <input
       {...props}

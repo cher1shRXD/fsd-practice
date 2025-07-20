@@ -1,7 +1,7 @@
-import { customFetch } from "@/shared/libs/fetch/customFetch"
 import { LoginData } from "../types/login-data";
+import axios from "axios";
 
 export const login = async (loginData: LoginData) => {
-  const res = await customFetch.post('/api/auth/login', loginData);
+  const res = await axios.post('/api/auth/login', loginData);
   return res;
 }
